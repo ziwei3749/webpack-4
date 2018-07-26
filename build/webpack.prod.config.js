@@ -21,6 +21,6 @@ module.exports = merge(baseWebpackConfig, {
         new CleanWebpackPlugin(["dist"], {
             root: path.resolve(__dirname, "../")
         }),
-        new ExtractTextPlugin("css/[name].css")
+        new ExtractTextPlugin("static/css/[name].css")
     ]
 });

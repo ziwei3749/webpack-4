@@ -11,8 +11,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, "../dist"),
-        filename: "[name].bundle.js",
-        // publicPath: "/"
+        filename: "static/js/[name].bundle.js",
     },
     module: {
         rules: [
@@ -22,15 +21,15 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: ["style-loader", "css-loader","postcss-loader"]
+                use: ["style-loader", "css-loader", "postcss-loader"]
             },
             {
                 test: /\.(png)|(jpg)|(jpeg)|(svg)|(gif)$/,
                 use: {
-                    loader: 'url-loader',
+                    loader: "url-loader",
                     options: {
                         limit: 8192,
-                        name: 'images/[name].[ext]'
+                        name: "static/images/[name].[ext]"
                     }
                 }
             },
@@ -38,7 +37,7 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /(node_modules)|(bower_components)/,
                 use: {
-                    loader: 'babel-loader'
+                    loader: "babel-loader"
                 }
             }
         ]
