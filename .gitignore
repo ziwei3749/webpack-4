@@ -62,5 +62,10 @@ typings/
 
 # other
 .vscode
+<<<<<<< HEAD
 dist
 .DS_Store
+=======
+.DS_Store 
+dist
+>>>>>>> dev_server_branch
