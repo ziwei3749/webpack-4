@@ -4,5 +4,22 @@ const webpackBaseConfig = require("./webpack.base.config");
 
 module.exports = merge(webpackBaseConfig, {
     mode: "development",
+    devServer: {
+        host: '0.0.0.0',
+        port: 8888
+    },
+    module: {
+        rules: [
+            {
+                test: /\.styl(us)?$/,
+                loader: [
+                    "style-loader",
+                    "css-loader",
+                    "postcss-loader",
+                    "stylus-loader"
+                ]
+            }
+        ]
+    },
     plugins: []
 });
