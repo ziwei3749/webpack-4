@@ -1,36 +1,33 @@
 <!-- App -->
 <template>
-    <div>
-        <div>App vue is resolved</div>
-        <img src="./me.jpg"
-             alt="">
-    </div>
+  <div>
+    <div>App vue is resolved</div>
+    <img src="./me.jpg"
+         alt="">
+  </div>
 
 </template>
 
 <script>
 export default {
-    data() {
-        return {};
-    },
+  data () {
+    return {}
+  },
 
-    components: {},
+  components: {},
 
-    computed: {},
+  computed: {},
 
-    mounted() {
-        console.log(new Set([1, 2, 3]));
-        const myName = "吕子威";
-    },
+  mounted () {},
 
-    methods: {}
-};
+  methods: {}
+}
 </script>
 <style lang="stylus">
 div
-    color: red
-    width: 200px
-    height: 200px
-    background: url('./1.png')
-    appearance: none
+  color: red
+  width: 200px
+  height: 200px
+  background: url('./1.png')
+  appearance: none
 </style>
