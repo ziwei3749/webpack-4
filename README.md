@@ -50,6 +50,7 @@ webpack@4从0搭建
     * pre-commont防止不符合eslint的代码被提交
   + 设置resolve，注意css里解析alias需要配置css-loadr
 
+
 - production
   + 将代码单独打包，代码分割，分配不同hash，以最大化利用缓存
     * 单独分离css
@@ -75,4 +76,5 @@ https://wiki.zthxxx.me/wiki/%E6%8A%80%E6%9C%AF%E5%BC%80%E5%8F%91/%E5%89%8D%E7%AB
 - webpack4的生产环境配置
 
 
-
+仪表盘
+ cnpm i webpack-dashboard

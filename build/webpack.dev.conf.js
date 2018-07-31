@@ -1,5 +1,5 @@
 const merge = require('webpack-merge')
-const webpackBaseConfig = require('./webpack.base.config')
+const webpackBaseConfig = require('./webpack.base.conf')
 const webpack = require('webpack')
 
 module.exports = merge(webpackBaseConfig, {
@@ -11,7 +11,6 @@ module.exports = merge(webpackBaseConfig, {
     hot: true,
     overlay: true
     // compress: true
-
   },
   module: {
     rules: [
@@ -26,5 +25,7 @@ module.exports = merge(webpackBaseConfig, {
       }
     ]
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()]
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ]
 })

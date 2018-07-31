@@ -2,6 +2,7 @@ const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+var DashboardPlugin = require('webpack-dashboard/plugin')
 
 const isDev = process.env.NODE_ENV === 'development'
 function resolve (dir) {
@@ -86,6 +87,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '../src/index.html')
-    }) // 默认自动在output.path里生成index.html,生产和开发环境都需要
+    }), // 默认自动在output.path里生成index.html,生产和开发环境都需要
+    new DashboardPlugin()
   ]
 }

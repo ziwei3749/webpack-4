@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --config build/webpack.prod.config.js",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.dev.config.js",
+    "build": "cross-env NODE_ENV=production webpack-dashboard -- webpack --config build/webpack.prod.conf.js",
+    "dev": "cross-env NODE_ENV=development webpack-dashboard -- webpack-dev-server --config build/webpack.dev.conf.js",
     "lint": "eslint --ext .js --ext .vue src/ build",
     "lint-fix": "eslint --fix --ext .js --ext .vue src/ build",
     "precommit": "npm run lint"
@@ -49,6 +49,7 @@
     "vue-template-compiler": "^2.5.16",
     "webpack": "^4.16.2",
     "webpack-cli": "^3.1.0",
+    "webpack-dashboard": "^2.0.0",
     "webpack-dev-server": "^3.1.5",
     "webpack-merge": "^4.1.3"
   },
